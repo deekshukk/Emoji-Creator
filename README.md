@@ -1,0 +1,1 @@
+Emoji Creator is a fun and interactive tool that lets you create your own emojis using plain. Whether you’re making something silly for friends, custom reactions for your Discord server, or personal branding icons, this project makes emoji creation simple and enjoyable.
