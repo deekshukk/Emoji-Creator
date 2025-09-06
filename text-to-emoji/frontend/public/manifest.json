@@ -1,0 +1,9 @@
+{
+  "short_name": "AI Emoji Creator",
+  "name": "AI Emoji Creator - Generate Custom Emojis",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff45bf",
+  "background_color": "#ff45bf",
+  "description": "Create custom emojis with AI"
+}
