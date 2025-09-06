@@ -1,130 +1,42 @@
-
-body, html {
-  height: 100%;
-  font-family: 'Inter';
-  background-image: linear-gradient(to left top, #ff45bf, #e143cf, #bb47dd, #894ee9, #3155f1);  position: relative;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw; 
-  height: 100vh;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #f1f1f1;
-}
-
-.h1 {
-  font-size: 52px;
-}
-.p {
-  font-size: 16px;
-}
-
-.custom-input {
-  margin-top: 0.75rem; 
-  display: block;
-  width: 500px; 
-  border-radius: 0.5rem; 
-  border: none; 
-  background-color: rgba(255, 255, 255, 0.05); 
-  padding: 0.375rem 0.75rem; 
-  font-size: 0.875rem;
-  line-height: 1.5rem; 
-  color: #fff; 
-}
-
-.custom-input::placeholder {
-  color: #ffffff;
-}
-
-.box {
-  padding-bottom: 20px;
-  padding-top: 30px;
-}
-
-.custom-input:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.25);
-  outline-offset: -2px;
-}
-
-.custom-button {
-  background-color: rgba(255, 255, 255, 0.05); 
-  padding: 0.375rem 0.75rem; 
-  font-size: 0.875rem; 
-  line-height: 1.5rem; 
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem; 
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.custom-button:hover:not(:disabled) {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.custom-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.error-message {
-  color: #ff6b6b;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: rgba(255, 107, 107, 0.1);
-  border-radius: 0.5rem;
-  border: 1px solid rgba(255, 107, 107, 0.3);
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.emoji-result {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  position: relative;
-  z-index: 10;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.generated-emoji {
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.generated-emoji:hover {
-  transform: scale(1.05);
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.save-button {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.card {
+  padding: 2em;
 }
 
-.save-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-1px);
+.read-the-docs {
+  color: #888;
 }
